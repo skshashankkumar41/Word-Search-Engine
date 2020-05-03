@@ -145,5 +145,4 @@ DONE --- CREATING_LOOKUP_DICT --- 1.066976547241211 seconds ---
 {'original': 'lingistics', 'predicted': {'linguistics': 0.7559289460184545}}
 {'original': 'informetion', 'predicted': {'information': 0.6666666666666667}}
 DONE --- PREDICTING_SIMILAR_WORD --- 0.08927679061889648 seconds ---
-
 """
