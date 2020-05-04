@@ -1,4 +1,5 @@
 # Word_Search_Engine
+## A word search engine that will give a correct word given misspelled word for a particular corpus of text data
 
 ## Results:
 #### {'original': 'languge', 'predicted': {'language': 0.7071067811865475}}
