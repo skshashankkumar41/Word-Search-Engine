@@ -117,7 +117,7 @@ class wse:
         # sorting dictionary based on similatiy value and returing the highest similarity text 
         final_dict = {k: v for k, v in sorted(sim_dict.items(), key=lambda item: item[1],reverse = True)}
         best_term = max(final_dict, key=final_dict.get)
-        return {'original':term,'predicted':{best_term:final_dict[best_term]}}
+        return {'input':term,'predicted':{best_term:final_dict[best_term]}}
         
 
 searcher = wse()
@@ -140,9 +140,9 @@ print("DONE --- PREDICTING_SIMILAR_WORD --- %s seconds ---" % (time.time() - sta
 Total Words:: 451
 Total ngrams:: 1093
 DONE --- CREATING_LOOKUP_DICT --- 1.066976547241211 seconds ---
-{'original': 'languge', 'predicted': {'language': 0.7071067811865475}}
-{'original': 'procecing', 'predicted': {'processing': 0.5773502691896258}}
-{'original': 'lingistics', 'predicted': {'linguistics': 0.7559289460184545}}
-{'original': 'informetion', 'predicted': {'information': 0.6666666666666667}}
+{'input': 'languge', 'predicted': {'language': 0.7071067811865475}}
+{'input': 'procecing', 'predicted': {'processing': 0.5773502691896258}}
+{'input': 'lingistics', 'predicted': {'linguistics': 0.7559289460184545}}
+{'input': 'informetion', 'predicted': {'information': 0.6666666666666667}}
 DONE --- PREDICTING_SIMILAR_WORD --- 0.08927679061889648 seconds ---
 """
